@@ -1,0 +1,26 @@
+{
+  "name": "hosein-ghasemizade",
+  "version": "2.0.0",
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "latest"
+  },
+  "keywords": [
+    "ghasemizade",
+    "tailwind",
+    "resume"
+  ],
+  "author": "hosein-ghasemizade",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "latest",
+    "postcss": "latest",
+    "postcss-cli": "latest",
+    "prettier": "latest",
+    "win-node-env": "latest"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development npx tailwindcss -i ./style/tailwind.css -o ./style/style.css --watch",
+    "build": "NODE_ENV=production npx tailwindcss -i ./style/tailwind.css -o ./style/style.min.css --watch --minify"
+  }
+}
